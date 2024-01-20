@@ -27,7 +27,7 @@ development:
 
 ## How to run the test suite
 
-To ensure the application is functioning correctly, run the tests with
+For tests we use Rspec
  ```bash
     bundle exec rspec
  ```
