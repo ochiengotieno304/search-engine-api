@@ -1,9 +1,11 @@
 development:
   clients:
     default:
-      uri: <%= Rails.application.credentials.dig(:mongoid, :uri) %>
+      database: search_development
+      hosts:
+        - localhost:27017
       options:
-        server_selection_timeout: 5
+        server_selection_timeout: 1
 
 production:
   clients:
@@ -15,7 +17,7 @@ production:
 test:
   clients:
     default:
-      database: api_test
+      database: search_test
       hosts:
         - localhost:27017
       options:

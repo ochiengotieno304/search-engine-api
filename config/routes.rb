@@ -7,5 +7,5 @@ Rails.application.routes.draw do
   resources :articles
   post '/search', to: 'articles#search'
   get '/analytics/overall', to: 'analytics#overall'
-  get '/analytics/per_user/:id', to: 'analytics#per_user'
+  get '/analytics/per_user/:id', to: 'analytics#per_user', as: 'analytics_per_user'
 end
